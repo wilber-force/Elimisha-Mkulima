@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TrainingFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/trainings_txt"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/trainings_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/training"/>
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

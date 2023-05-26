@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:title="Training centre"
+        android:id="@+id/training_menu"
+        android:icon="@drawable/ic_baseline_local_library_24"
+        />
+    <item
+        android:title="Home"
+        android:id="@+id/home_menu"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/baseline_account_circle_24"
+        />
+</menu>

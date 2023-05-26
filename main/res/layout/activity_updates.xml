@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.UpdatesActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/event_update_layout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Update"
+                android:textSize="26sp"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:id="@+id/training_add"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="8dp"
+                android:background="#F0F0F0"
+                android:layout_below="@+id/training_add">
+
+                <Spinner
+                    android:id="@+id/spinner_add"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/update_item"
+                    android:padding="15dp" />
+            </androidx.cardview.widget.CardView>
+            <EditText
+                android:id="@+id/title_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edittext_background"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="16dp"
+                android:hint="Title"
+                android:layout_below="@id/cardLayout"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/start_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:hint="Starting on"
+                android:inputType="date"
+                android:drawablePadding="15dp"
+                android:layout_below="@+id/title_add" />
+
+
+            <EditText
+                android:id="@+id/end_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Ends on"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:drawablePadding="15dp"
+                android:layout_below="@+id/start_add"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/details_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Details"
+                android:drawablePadding="15dp"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:layout_below="@id/end_add"
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="30dp"
+                android:text="Add"
+                android:backgroundTint="@color/bright_blue"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="10dp"
+                android:layout_below="@+id/details_add" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

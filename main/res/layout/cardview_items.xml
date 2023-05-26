@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#c0c0c0"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp">
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Weather changes"
+        android:id="@+id/topic"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Published On: "
+            android:id="@+id/post_date"
+            android:textAlignment="center"
+            android:layout_below="@+id/topic"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starts On: "
+            android:gravity="center"
+            android:id="@+id/begin_date"
+            android:layout_below="@+id/post_date"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ends on:"
+            android:id="@+id/final_date"
+            android:layout_below="@id/begin_date"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
